@@ -4,6 +4,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import title_seperator from "../../../asserts/logo/title-seperator.png";
 import BlogCard from "./BlogCard";
+import tour1 from "../../../asserts/tour/tour-thumb01.jpg"
+import tour2 from "../../../asserts/tour/tour-thumb02.jpg"
+import tour3 from "../../../asserts/tour/tour-thumb03.jpg"
+import tour4 from "../../../asserts/tour/tour-thumb04.jpg"
+import tour5 from "../../../asserts/tour/tour-thumb05.jpg"
+import tour6 from "../../../asserts/tour/tour-thumb06.jpg"
 
 const useStyle = makeStyles({
   right_desc: {
@@ -58,7 +64,7 @@ const Blogs = () => {
               <BlogCard
                 subtitle="BY GFXPARTNER"
                 title="Top 10 Best Places to Explore in India"
-                image="http://gfxpartner.com/Frolic/images/blog-thumb01.jpg"
+                image={tour1}
                 givenlink="blog"
               />
             </Grid>
@@ -66,7 +72,7 @@ const Blogs = () => {
               <BlogCard
                 subtitle="BY GFXPARTNER"
                 title="Top unexplored places of India "
-                image="http://gfxpartner.com/Frolic/images/blog-thumb02.jpg"
+                image={tour2}
                 givenlink="blog2"
               />
             </Grid>
@@ -74,7 +80,7 @@ const Blogs = () => {
               <BlogCard
                 subtitle="BY GFXPARTNER"
                 title="An Enchanted Ice Cave in Midst of Denmark"
-                image="http://gfxpartner.com/Frolic/images/blog-thumb03.jpg"
+                image={tour3}
                 givenlink="blog"
               />
             </Grid>

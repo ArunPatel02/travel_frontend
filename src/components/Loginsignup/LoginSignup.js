@@ -12,6 +12,7 @@ import { Form, Formik } from "formik";
 import initialValues from "../../formControllers/formInitialValue";
 import formValidationSchema from "../../formControllers/formSchema";
 import ServerApi from "../../Api/ApiService";
+import cookie from "js-cookie";
 
 const useStyles = makeStyles({
   loginToggle: {
@@ -169,7 +170,7 @@ const LoginSignup = () => {
         });
     };
     getUser();
-  }, [localStorage.getItem("token")]);
+  }, []);
 
   useEffect(() => {
     setTimeout(() => {
@@ -190,7 +191,7 @@ const LoginSignup = () => {
         setlogintoggle(false);
       }
     });
-  }, []);
+  }, [localStorage.getItem("token")]);
 
   const handleLogin = (values) => {
     try {
@@ -308,7 +309,10 @@ const LoginSignup = () => {
             className={classes.logoutToggle}
             onClick={() => {
               localStorage.clear();
-              setIsLogin(false)
+              cookie.set("sessssion" , "arun patel")
+              cookie.remove("session");
+              cookie.remove("session.sig");
+              setIsLogin(false);
             }}
           >
             <LogoutIcon />

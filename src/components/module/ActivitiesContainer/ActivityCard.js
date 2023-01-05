@@ -4,6 +4,12 @@ import React, { useEffect, useMemo, useRef, useState } from "react";
 // import tour1 from "../../../asserts/tour/tour-thumb01.jpg";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import tour1 from "../../../asserts/tour/tour-thumb01.jpg"
+import tour2 from "../../../asserts/tour/tour-thumb02.jpg"
+import tour3 from "../../../asserts/tour/tour-thumb03.jpg"
+import tour4 from "../../../asserts/tour/tour-thumb04.jpg"
+import tour5 from "../../../asserts/tour/tour-thumb05.jpg"
+import tour6 from "../../../asserts/tour/tour-thumb06.jpg"
 import "./Activity.css";
 
 const useStyles = makeStyles({
@@ -111,42 +117,42 @@ const ActivityCard = (props) => {
       <div style={{position : "relative"}}>
         <div className="activity_container">
           <div className="activity_card" ref={forwardref}>
-            <img src="http://gfxpartner.com/Frolic/images/attractions01-3x.jpg" alt="" />
+            <img src={tour1} alt="" />
             <div className="card_title">
               <div className="title">Camping in vally</div>
               <div className="line"></div>
             </div>
           </div>
           <div className="activity_card">
-            <img src="http://gfxpartner.com/Frolic/images/attractions02-3x.jpg" alt="" />
+            <img src={tour2} alt="" />
             <div className="card_title">
               <div className="title">UnderWater Tour</div>
               <div className="line"></div>
             </div>
           </div>
           <div className="activity_card">
-            <img src="http://gfxpartner.com/Frolic/images/attractions03-3x.jpg" alt="" />
+            <img src={tour3} alt="" />
             <div className="card_title">
               <div className="title">Lake View</div>
               <div className="line"></div>
             </div>
           </div>
           <div className="activity_card">
-            <img src="http://gfxpartner.com/Frolic/images/attractions04-3x.jpg" alt="" />
+            <img src={tour4} alt="" />
             <div className="card_title">
               <div className="title">Ice Treking</div>
               <div className="line"></div>
             </div>
           </div>
           <div className="activity_card">
-            <img src="http://gfxpartner.com/Frolic/images/attractions05-3x.jpg" alt="" />
+            <img src={tour5} alt="" />
             <div className="card_title">
               <div className="title">Climb the Ice</div>
               <div className="line"></div>
             </div>
           </div>
           <div className="activity_card" ref={backwardref}>
-            <img src="http://gfxpartner.com/Frolic/images/attractions06-3x.jpg" alt="" />
+            <img src={tour6} alt="" />
             <div className="card_title">
               <div className="title">Boat Enjoy</div>
               <div className="line"></div>
